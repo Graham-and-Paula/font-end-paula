@@ -2,6 +2,7 @@
 	--main-black: #000000;
 	--main-grey: #E5F1F1;
 	--main-yellow: #FDA841;
+	--main-yellow-translucent:#fda84140;
 	--main-red: #F1635B;
 
 	--hover-color: #fff;
@@ -31,10 +32,6 @@ body {
 a {
 	color: #000;
 	text-decoration: none;
-}
-
-a:hover {
-	
 }
 
 a img {
@@ -83,11 +80,14 @@ nav a:hover {
 
 main {
 	flex-grow: 1;
+	overflow-y: auto;
 }
 
 main > section { 
 	height: 100%;
-	background-image: ;
+	background-image:url("../assets/img/whitecap.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 section > header {
@@ -95,7 +95,7 @@ section > header {
 	align-items: center;
 	width: 40%;
 	height: 100%;
-	background-color: var(--main-yellow);
+	background-image:linear-gradient(to right, var(--main-yellow) 35%, var(--main-yellow-translucent));
 }
 
 h1 {
