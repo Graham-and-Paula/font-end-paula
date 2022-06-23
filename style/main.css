@@ -46,11 +46,14 @@ img {
 }
 
 header {
+	padding: 10px;
+}
+
+body > header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-shrink: 0;
-	padding: 10px;
 }
 
 nav {
@@ -79,8 +82,26 @@ nav a:hover {
 }
 
 main {
-	background-color: #000000;
 	flex-grow: 1;
+}
+
+main > section { 
+	height: 100%;
+	background-image: ;
+}
+
+section > header {
+	display: flex; 
+	align-items: center;
+	width: 40%;
+	height: 100%;
+	background-color: var(--main-yellow);
+}
+
+h1 {
+	font-size: clamp(26pt, 10vw, 100pt);
+	margin: /*auto*/ 0;
+
 }
 
 footer {
