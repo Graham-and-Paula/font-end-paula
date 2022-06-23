@@ -1,8 +1,8 @@
 :root {
-	--main-black: ;
-	--main-grey:  rgb(216, 239, 239);;
-	--main-yellow: ;
-	--main-red: ;
+	--main-black: #000000;
+	--main-grey: #E5F1F1;
+	--main-yellow: #FDA841;
+	--main-red: #F1635B;
 
 	--hover-color: #fff;
 	--body-color: #fff;
@@ -29,6 +29,7 @@ a {
 
 a:hover {
 	text-decoration:underline overline #000;
+
 }
 
 a img {
@@ -41,16 +42,22 @@ img {
 
 .wrapper {
 	margin: 0 auto; /*margin: <vertical> <horizontal> */
+	padding: 20px;
 	max-width:960px;
 }
 
 body > header {
-	padding: 20px;
+
 	background-color: var(--main-grey);	
+}
+main {
+	color: #E5F1F1;
+	background-color: var(--main-black);
+	height: 100vh;
 }
 
 footer {
-	background-color: rgb(227, 167, 84);
+	background-color: var(--main-yellow);
 }
 
 
